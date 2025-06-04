@@ -1,31 +1,33 @@
 \documentclass{elsarticle}
 
-\usepackage{listings}
+\usepackage{listings}            % For nice code listings
+\usepackage{orcidlink}           % For nice orcid icons
+\usepackage{soul}                % For strikethrough
 \usepackage{xcolor}
-
+\usepackage{hyperref}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codebackcolour}{rgb}{0.95,0.95,0.92}
 
 \lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{magenta},
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
-    basicstyle=\ttfamily\footnotesize,
-    breakatwhitespace=false,
-    breaklines=true,
-    captionpos=b,
-    keepspaces=true,
-    numbers=left,
-    numbersep=5pt,
-    showspaces=false,
-    showstringspaces=false,
-    showtabs=false,
-    tabsize=2
+  backgroundcolor=\color{codebackcolour},
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  keepspaces=true,
+  % numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2
 }
 
 \lstset{style=mystyle}
@@ -38,6 +40,32 @@
 
 \title{Style Guide:
        Writing papers with Prof.\ Heun}
+
+\author[calvinengr]{Erin Schuman}
+\author[calvinengr,leedsear,sunspl]{Matthew Kuperus Heun\orcidlink{0000-0002-7438-214X}}
+
+\affiliation[calvinengr]{organization={Engineering Department,
+                                       Calvin University},
+                         addressline={3201 Burton St. SE},
+                         city={Grand Rapids},
+                         state={Michigan},
+                         postcode={49546},
+                         country={USA}}
+
+\affiliation[leedsear]{organization={Sustainability Research Institute,
+                                     School of Earth and Environment,
+                                     University of Leeds},
+                       city={Leeds},
+                       postcode={LS2 9JT},
+                       country={United Kingdom}}
+
+\affiliation[sunspl]{organization={School for Public Leadership,
+                                   Faculty of Economic and Management Science,
+                                   Stellenbosch University},
+                     city={Matieland},
+                     postcode={7602},
+                     country={South Africa}}
+
 
 
 \begin{abstract}
@@ -54,8 +82,69 @@ with Prof.\ Heun.
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Usage and style}
+\label{sec:usage_style}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Use \LaTeX{}.
+%++++++++++++++++++++++++++++++
+\subsection{This, That, or It as the subject of a sentence}
+%++++++++++++++++++++++++++++++
+
+``This,'' ``That,'' or ``It'' as the subject of a sentence
+is almost always problematic, because
+the antecedent is almost always unclear to the reader.
+(Interestingly, the antecedent is almost always clear to the writer,
+making it difficult to spot this problem.)
+%
+\begin{itemize}
+
+  \item Never use This, That, or It as the subject of a sentence.\\
+        \emph{\st{This is almost always problematic.}}
+
+  \item This or that as a modifier to the subject is usually OK. \\
+        \emph{This writing style is almost always problematic.}
+
+\end{itemize}
+%
+Note that use of this, that, or it as the subject of a sentence
+is MKH's pet peeve.
+He apologizes in advance for any inconvenience.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Oxford comma}
+\label{sec:oxford_comma}
+%++++++++++++++++++++++++++++++
+
+The Oxford comma usually clarifies writing.
+%
+\begin{itemize}
+
+  \item Omission of the Oxford comma leads to confusion: \\
+        \emph{\st{I dedicate this book to my parents, Ayn Rand and God.}}
+
+  \item Use the Oxford comma: \\
+        \emph{I dedicate this book to my parents, Ayn Rand, and God.}
+
+\end{itemize}
+
+
+%++++++++++++++++++++++++++++++
+\subsection{In order to \ldots}
+\label{sec:in_order_to}
+%++++++++++++++++++++++++++++++
+
+\begin{itemize}
+
+  \item ``In order to'' is unnecessarily long. \\
+        \emph{\st{In order to graduate, earn high marks in all your courses.}}
+
+  \item Simplify by deleting ``In order.''.  \\
+        \emph{To graduate, earn high marks in all your courses.}
+
+\end{itemize}
+%
 
 
 
@@ -65,25 +154,44 @@ Use \LaTeX{}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %++++++++++++++++++++++++++++++
+\subsection{\LaTeX{}}
+\label{sec:use_latex}
+%++++++++++++++++++++++++++++++
+
+Writing in \LaTeX{} will make your life easier.
+\LaTeX{} is much better for equations and overall document formatting.
+
+
+
+%++++++++++++++++++++++++++++++
 \subsection{Type expansion}
 \label{sec:type_expansion}
 %++++++++++++++++++++++++++++++
 
 Use a snippet manager or type expansion app to help with complicated
 \LaTeX{} expressions.
-For example, typing \verb+llga+ produces
+For example, the snippet manager can be configures so that
+typing \texttt{llga} produces
 
+\begin{lstlisting}[language=TEX, caption=\texttt{llga} example.]
+\alpha
+\end{lstlisting}
 
-For example, typing \verb+llsec+ should automatically generate
+A more complicated example
+involves configuring the snippet manager so that
+typing \texttt{llsec} generates the following.
 
-
-
-\begin{lstlisting}[language=TEX, caption=\texttt{llsec} example]
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{lstlisting}[language=TEX, caption=\texttt{llsec} example.]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{}
 \label{sec:placeholder_label}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{lstlisting}
+
+macOS includes type expansion in the Keyboard area of settings.
+Tools such as \href{https://www.alfredapp.com}{Alfred} also
+provide a \texttt{{cursor}} macro that indicates the desired
+cursor location after snippet expansion.
 
 
 
