@@ -1,5 +1,6 @@
 \documentclass{elsarticle}
 
+\usepackage{cancel}              % To cancel equation terms
 \usepackage{listings}            % For nice code listings
 \usepackage{orcidlink}           % For nice orcid icons
 \usepackage{soul}                % For strikethrough
@@ -81,6 +82,71 @@ with Prof.\ Heun.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Structure}
+\label{sec:structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The five sections of a journal article are almost always
+
+%
+\begin{enumerate}
+
+  \item Introduction,
+
+  \item Methods and Data,
+
+  \item Results,
+
+  \item Discussion, and
+
+  \item Conclusion.
+
+\end{enumerate}
+%
+
+%++++++++++++++++++++++++++++++
+\subsection{Introduction}
+%++++++++++++++++++++++++++++++
+
+%
+\begin{itemize}
+
+  \item The Introduction should include a short summary of prior literature.
+
+  \item The Introduction should identify a few (3 or less)
+        contributions to the literature.
+
+  \item The introduction almost always ends with a paragraph such as the following.
+          \begin{quotation}
+          \noindent{}The remainder of this paper is structured as follows.
+          Section~2 describes methods and data.
+          Section~3 describes results obtained
+          by applying the methods to the data.
+          Section~4 discusses the results, and
+          Section~5 concludes.
+          Appendices,
+          supplementary information, and
+          a data repository contain additional information.
+          \end{quotation}
+
+\end{itemize}
+%
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Results}
+%++++++++++++++++++++++++++++++
+
+%
+\begin{itemize}
+
+  \item The Results section should have at least one result
+        for each contribution to the literature.
+
+\end{itemize}
+%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Style and usage}
@@ -91,9 +157,9 @@ with Prof.\ Heun.
 \subsection{This, That, or It as the subject of a sentence}
 %++++++++++++++++++++++++++++++
 
-``This,'' ``That,'' or ``It'' as the subject of a sentence
+Using ``This,'' ``That,'' or ``It'' as the subject of a sentence
 is almost always problematic, because
-the antecedent is almost always unclear to the reader.
+the antecedent is almost always \emph{un}clear to the reader.
 (Interestingly, the antecedent is almost always clear to the writer,
 making it difficult to spot this problem.)
 %
@@ -109,7 +175,7 @@ making it difficult to spot this problem.)
 %
 Note that use of this, that, or it as the subject of a sentence
 is MKH's pet peeve.
-He apologizes in advance for any inconvenience.
+He apologizes in advance for any roastings that occur.
 
 
 %++++++++++++++++++++++++++++++
@@ -188,6 +254,39 @@ are reserved words for stages in the energy conversion chain.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Punctuation around equations}
+\label{sec:punctuation_equations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Punctuation equations as though the equal sign is a verb.
+
+%
+\begin{itemize}
+
+  \item Newton was the first to understand that
+        \begin{equation}
+          \cancel{F = ma}
+        \end{equation}
+        \noindent{} although others had considered the idea.
+
+  \item Newton was the first to understand that
+        \begin{equation}
+          F = ma \, ,
+        \end{equation}
+        \noindent{} although others had considered the idea.
+
+  \item Add a little space between the equation and the punctuation with \verb+\,+~.
+
+\end{itemize}
+%
+
+
+
+%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\LaTeX{}}
 \label{sec:use_latex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -202,6 +301,8 @@ for equations and overall document formatting.
   \item Use short lines.
 
   \item Start each sentence on a new line.
+
+  \item Break lines after punctuation and conjunctions.
 
   \item Use \texttt{BibLaTeX} for bibliography management and citations.
 
@@ -244,8 +345,9 @@ typing \texttt{llsec} generates the following.
 Use the prefix ``ll'' for \LaTeX{} commands and ``llg'' for Greek letters.
 
 macOS includes type expansion in the Keyboard area of settings.
-Tools such as \href{https://www.alfredapp.com}{Alfred} also
-provide a \texttt{{cursor}} macro that indicates the desired
+Tools such as \href{https://www.alfredapp.com}{Alfred} and
+\href{https://textexpander.com}{Textexpander}
+provide a way to indicate the desired
 cursor location after snippet expansion.
 
 
