@@ -83,8 +83,8 @@ with Prof.\ Heun.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Usage and style}
-\label{sec:usage_style}
+\section{Style and usage}
+\label{sec:style_usage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %++++++++++++++++++++++++++++++
@@ -146,6 +146,45 @@ The Oxford comma usually clarifies writing.
 \end{itemize}
 %
 
+
+%++++++++++++++++++++++++++++++
+\subsection{Punctuation around quotation marks}
+\label{sec:punctuation_quotes}
+%++++++++++++++++++++++++++++++
+
+%
+\begin{itemize}
+
+  \item \emph{\st{If you ``live another day'', you don't die another day.}}
+
+  \item Punctuation goes inside outside quotation marks. \\
+        \emph{If you ``live another day,''
+        you don't \href{https://en.wikipedia.org/wiki/Die_Another_Day}{Die another day}.}
+
+\end{itemize}
+%
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Primary, final, and useful}
+\label{sec:pfu}
+%++++++++++++++++++++++++++++++
+
+``Primary,'' ``final,'' and ``useful''
+are reserved words for stages in the energy conversion chain.
+
+%
+\begin{itemize}
+
+  \item Reserve ``Primary,'' ``final,'' and ``useful''
+        for the energy conversion chain. \\
+        \emph{\st{Equation 12 is useful.}}
+
+  \item Use synonyms such as ``helpful.'' \\
+        \emph{Equation 12 is helpful.}
+
+\end{itemize}
+%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
