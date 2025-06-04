@@ -121,10 +121,10 @@ The Oxford comma usually clarifies writing.
 %
 \begin{itemize}
 
-  \item Omission of the Oxford comma leads to confusion: \\
+  \item Omission of the Oxford comma leads to confusion. \\
         \emph{\st{I dedicate this book to my parents, Ayn Rand and God.}}
 
-  \item Use the Oxford comma: \\
+  \item Use the Oxford comma. \\
         \emph{I dedicate this book to my parents, Ayn Rand, and God.}
 
 \end{itemize}
@@ -140,8 +140,31 @@ The Oxford comma usually clarifies writing.
   \item ``In order to'' is unnecessarily long. \\
         \emph{\st{In order to graduate, earn high marks in all your courses.}}
 
-  \item Simplify by deleting ``In order.''.  \\
+  \item Simplify by deleting ``In order.''  \\
         \emph{To graduate, earn high marks in all your courses.}
+
+\end{itemize}
+%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\LaTeX{}}
+\label{sec:use_latex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Writing in \LaTeX{} will make your life easier.
+\LaTeX{} is much better than word
+for equations and overall document formatting.
+
+%
+\begin{itemize}
+
+  \item Use short lines.
+
+  \item Start each sentence on a new line.
+
+  \item Use \texttt{BibLaTeX} for bibliography management and citations.
 
 \end{itemize}
 %
@@ -152,15 +175,6 @@ The Oxford comma usually clarifies writing.
 \section{Helpful hints}
 \label{sec:helpful_hints}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%++++++++++++++++++++++++++++++
-\subsection{\LaTeX{}}
-\label{sec:use_latex}
-%++++++++++++++++++++++++++++++
-
-Writing in \LaTeX{} will make your life easier.
-\LaTeX{} is much better for equations and overall document formatting.
-
 
 
 %++++++++++++++++++++++++++++++
@@ -187,6 +201,8 @@ typing \texttt{llsec} generates the following.
 \label{sec:placeholder_label}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{lstlisting}
+
+Use the prefix ``ll'' for \LaTeX{} commands and ``llg'' for Greek letters.
 
 macOS includes type expansion in the Keyboard area of settings.
 Tools such as \href{https://www.alfredapp.com}{Alfred} also
