@@ -114,7 +114,7 @@ The five sections of a journal article are almost always
 
   \item The Introduction should include a short summary of prior literature.
 
-  \item The Introduction should identify a few (3 or less)
+  \item The Introduction should identify a few (typically 3 or less)
         contributions to the literature.
 
   \item The introduction almost always ends with a paragraph such as the following.
@@ -237,12 +237,12 @@ The Oxford comma usually clarifies writing.
 %++++++++++++++++++++++++++++++
 
 ``Primary,'' ``final,'' and ``useful''
-are reserved words for stages in the energy conversion chain.
+are adjectives that describe stages in the energy conversion chain.
 
 %
 \begin{itemize}
 
-  \item Reserve ``Primary,'' ``final,'' and ``useful''
+  \item Reserve ``primary,'' ``final,'' and ``useful''
         for the energy conversion chain. \\
         \emph{\st{Equation 12 is useful.}}
 
@@ -286,7 +286,7 @@ Punctuation equations as though the equal sign is a verb.
 \label{sec:use_latex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Writing in \LaTeX{} will make your life easier.
+Writing in \LaTeX{} makes your life easier.
 \LaTeX{} is much better than word
 for equations and overall document formatting.
 
@@ -337,11 +337,12 @@ typing \texttt{llsec} generates the following.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{lstlisting}
 
-Use the prefix ``ll'' for \LaTeX{} commands and ``llg'' for Greek letters.
+Use the prefix ``ll'' for \LaTeX{} commands and
+the prefix ``llg'' for Greek letters.
 
 macOS includes type expansion in the Keyboard area of settings.
 Tools such as \href{https://www.alfredapp.com}{Alfred} and
-\href{https://textexpander.com}{Textexpander}
+\href{https://textexpander.com}{Text expander}
 provide a way to indicate the desired
 cursor location after snippet expansion.
 
