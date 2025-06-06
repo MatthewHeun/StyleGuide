@@ -36,6 +36,7 @@
 
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 \begin{frontmatter}
 
@@ -105,6 +106,9 @@ The five sections of a journal article are almost always
 \end{enumerate}
 %
 
+The broad picture should be explained first
+before mentioning any details.
+
 %++++++++++++++++++++++++++++++
 \subsection{Introduction}
 %++++++++++++++++++++++++++++++
@@ -136,6 +140,7 @@ The five sections of a journal article are almost always
 
 %++++++++++++++++++++++++++++++
 \subsection{Results}
+\label{ssc:Results}
 %++++++++++++++++++++++++++++++
 
 %
@@ -143,6 +148,21 @@ The five sections of a journal article are almost always
 
   \item The Results section should have at least one result
         for each contribution to the literature.
+  \item Write the results section before the rest
+        of the paper. Avoid the temptation
+        to write methods
+        within the results section.
+        For example, the Table~\ref{tab}
+        presents results for three efficiency types.
+        The results section should discuss the numerical results
+        but the methods section should discuss the three methods
+        used to determine the numerical results.
+% \begin{table}
+% \centering
+% \includegraphics[width=0.8\linewidth]{images/Efficiency Table.png}
+% \caption{The efficiencies of coal processing systems in a material conversion chain}
+% \label{tab:efficiencyofcoal}
+% \end{table}
 
 \end{itemize}
 %
@@ -252,6 +272,30 @@ are adjectives that describe stages in the energy conversion chain.
 \end{itemize}
 %
 
+%++++++++++++++++++++++++++++++
+\subsection{Common Words and Phrases to Avoid}
+\label{sec:words_to_avoid}
+%++++++++++++++++++++++++++++++
+
+When writing a research paper,
+certain words may come across
+as passive.
+Certainty and clarity help the reader comprehend information
+more easily.
+
+\begin{itemize}
+
+  \item Referring to figures, tables, etc. should avoid words
+        such as seen, display, etc.\\
+        \emph{\st{In this section we display results}}\\
+        \emph{In this section we present results}
+  \item \emph{\st{Figure [] only shows}}
+        \emph{Figure [] shows only}
+\end{itemize}
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Punctuation around equations}
@@ -312,6 +356,7 @@ for equations and overall document formatting.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+
 %++++++++++++++++++++++++++++++
 \subsection{Type expansion}
 \label{sec:type_expansion}
@@ -339,6 +384,10 @@ typing \texttt{llsec} generates the following.
 
 Use the prefix ``ll'' for \LaTeX{} commands and
 the prefix ``llg'' for Greek letters.
+
+RStudio includes a snippet manager found in "Edit Code Snippets".
+Pick which file type you want to incorporate the type expansion in.
+For more information, visit \href{https://support.posit.co/hc/en-us/articles/204463668-Code-Snippets-in-the-RStudio-IDE}{RStudio snippets}.
 
 macOS includes type expansion in the Keyboard area of settings.
 Tools such as \href{https://www.alfredapp.com}{Alfred} and
