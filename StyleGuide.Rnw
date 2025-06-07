@@ -365,7 +365,7 @@ for equations and overall document formatting.
 Use a snippet manager or type expansion app to help with complicated
 \LaTeX{} expressions.
 For example, the snippet manager can be configures so that
-typing \texttt{llga} produces
+typing \texttt{llga} produces the following.
 
 \begin{lstlisting}[language=TEX, caption=\texttt{llga} example.]
 \alpha
