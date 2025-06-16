@@ -1,6 +1,7 @@
 \documentclass{elsarticle}
 
 \usepackage{cancel}              % To cancel equation terms
+\usepackage{pdfpages}            % To include additional documents
 \usepackage{listings}            % For nice code listings
 \usepackage{orcidlink}           % For nice orcid icons
 \usepackage{soul}                % For strikethrough
@@ -395,6 +396,13 @@ Tools such as \href{https://www.alfredapp.com}{Alfred} and
 provide a way to indicate the desired
 cursor location after snippet expansion.
 
+\cleardoublepage
 
+\appendix
+
+
+
+\includepdf[pages=-]{more_docs/careers.pdf}
+\includepdf[pages=-]{more_docs/Writing_your_paper_ebook.pdf}
 
 \end{document}
