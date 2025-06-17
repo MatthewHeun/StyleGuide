@@ -344,6 +344,13 @@ for equations and overall document formatting.
   \item Break lines after punctuation and conjunctions.
 
   \item Use \texttt{BibLaTeX} for bibliography management and citations.
+    \begin{itemize}
+      \item Cite using BibDesk and then compile the document to a BibLaTeX file. Standard naming for this file is \texttt{main.bib}.
+      \item Citations with two authors use the format \texttt{author = \{A. \{Valero Capilla\} and A. \{Valero Delgado\}\}}.
+      \item The \texttt{BibLaTeX} file will not compile if the \texttt{\&} symbol is used.
+      \item Use the format \texttt{\textbackslash citep\{Author\_Year\}} or \texttt{\textbackslash citet\{Author\_Year\}}.
+      \item To cite a table, use the format \texttt{\textbackslash citet[Table X.X]\{Author\_Year\}}.
+    \end{itemize}
 
 \end{itemize}
 %
