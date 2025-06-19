@@ -175,10 +175,10 @@ before mentioning any details.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %++++++++++++++++++++++++++++++
-\subsection{This, That, or It as the subject of a sentence}
+\subsection{This, that, or it as the subject of a sentence}
 %++++++++++++++++++++++++++++++
 
-Using ``This,'' ``That,'' or ``It'' as the subject of a sentence
+Using ``this,'' ``that,'' or ``it'' as the subject of a sentence
 is almost always problematic, because
 the antecedent is almost always \emph{un}clear to the reader.
 (Interestingly, the antecedent is almost always clear to the writer,
@@ -186,7 +186,7 @@ making it difficult to spot this problem.)
 %
 \begin{itemize}
 
-  \item Never use This, That, or It as the subject of a sentence.\\
+  \item Never use this, that, or it as the subject of a sentence.\\
         \emph{\st{This is almost always problematic.}}
 
   \item This or that as a modifier to the subject is usually OK. \\
@@ -290,8 +290,9 @@ more easily.
         such as seen, display, etc.\\
         \emph{\st{In this section we display results}}\\
         \emph{In this section we present results}
-  \item \emph{\st{Figure [] only shows}}
-        \emph{Figure [] shows only}
+  \item Take care in the placement of adverbs. \\
+        \emph{\st{Figure X only shows three concepts.}} \\
+        \emph{Figure X shows only three concepts.}
 \end{itemize}
 
 
@@ -346,11 +347,24 @@ for equations and overall document formatting.
 
   \item Use \texttt{BibLaTeX} for bibliography management and citations.
     \begin{itemize}
-      \item Cite using BibDesk and then compile the document to a BibLaTeX file. Standard naming       for this file is \texttt{main.bib}.
-      \item Citations with two authors use the format \texttt{author = \{A. \{Valero Capilla\}        and A. \{Valero Delgado\}\}}.
-      \item The \texttt{BibLaTeX} file will not compile if the \texttt{\&} or \texttt{;} symbol       is used.
-      \item Use the format \texttt{\textbackslash citep\{Author\_Year\}} or           \texttt{\textbackslash citet\{Author\_Year\}}.
-      \item To cite a table, use the format \texttt{\textbackslash citet[Table X          .X]\{Author\_Year\}}.
+      \item Cite using BibDesk
+            and compile the document to a BibLaTeX file.
+            Standard naming
+            for this file is \texttt{references.bib}.
+      \item Citations with two authors use the format \\
+            \texttt{author = \{A. \{Valero Capilla\}
+                    and A. \{Valero Delgado\}\}}.
+      \item Use \texttt{\{\}} around compound names,
+            as in the example above.
+      \item The \texttt{BibLaTeX} file will not compile
+            if the citekey contains \texttt{\&} or \texttt{;} .
+      \item Use the following commands to cite in the paper: \\
+            \texttt{\textbackslash citep\{Author\_Year\}} or
+            \texttt{\textbackslash citet\{Author\_Year\}}.
+      \item To cite a table or figure from a paper,
+            use the command \\
+            \texttt{\textbackslash citet[Table$\sim$X.X]\{citekey\}} or
+            \texttt{\textbackslash citep[Figure$\sim$X.X]\{citekey\}}.
     \end{itemize}
 
 \end{itemize}
