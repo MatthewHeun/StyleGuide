@@ -367,6 +367,23 @@ $y_i$ is the mole fraction of mixture component $i$.
 %
 
 
+%++++++++++++++++++++++++++++++
+\subsection{Typesetting variables and matrices}
+\label{sec:typesetting_vars_mats}
+%++++++++++++++++++++++++++++++
+
+\begin{itemize}
+
+  \item Variables are typeset as italics ($r$).
+
+  \item Vectors are typeset as bold lowercase letters (\textbf{r}).
+
+  \item Matrices are typeset as bold uppercase letters (\textbf{R}).
+
+\end{itemize}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\LaTeX{}}
