@@ -409,6 +409,10 @@ for equations and overall document formatting.
       \item For single-character subscripts,
             do not surround with braces (\verb+$P_{0}$+).
             Instead, \verb+$P_0$+ is sufficient and less verbose.
+
+      \item Don't label an equation
+            unless you refer to it in the text.
+
     \end{itemize}
 
 \end{itemize}
