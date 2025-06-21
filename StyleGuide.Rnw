@@ -297,15 +297,12 @@ more easily.
 
 
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Punctuation around equations}
+%++++++++++++++++++++++++++++++
+\subsection{Punctuation around equations}
 \label{sec:punctuation_equations}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%++++++++++++++++++++++++++++++
 
-Punctuation equations as though the equal sign is a verb.
-
+Punctuate equations as though the equal sign were a verb.
 %
 \begin{itemize}
 
@@ -325,6 +322,50 @@ Punctuation equations as though the equal sign is a verb.
 
 \end{itemize}
 %
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Narrating equations}
+\label{sec:narrating_equations}
+%++++++++++++++++++++++++++++++
+
+In the \texttt{Methods} section,
+first state the equation, then explain terms.
+
+%
+\begin{itemize}
+
+  \item Not like this:\\
+        \st{The exergy of a mixture ($B_{mix}$)
+        is the ambient
+        temperature ($T_{0}$) multiplied by the change
+        in entropy of the mixture from the Earth's
+        crust to the current state ($S_{mix}$).}
+
+\begin{equation}
+  \cancel{B_{mix} =
+                    T_{0}S_{mix} =
+                    -RT_{0}\sum_{i}{N_{i}{y_{i}}\ln{y_{i}}}}
+\end{equation}
+
+  \item Rather like this:\\
+        The exergy of a mixture ($B_{mix}$) is given by
+\begin{equation}
+  {B_{mix} =
+              T_{0}S_{mix} =
+              -RT_{0}\sum_{i}{N_{i}{y_{i}}\ln{y_{i}}}} \, ,
+\end{equation}
+%
+where
+$T_0$ is the ambient temperature,
+$S_{mix}$ is total mixture entropy,
+$R$ is the ideal gas constant,
+$N_i$ is the number of moles of mixture component $i$, and
+$y_i$ is the mole fraction of mixture component $i$.
+
+\end{itemize}
+%
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
