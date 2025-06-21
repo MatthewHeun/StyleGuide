@@ -406,6 +406,9 @@ for equations and overall document formatting.
             use the command \\
             \texttt{\textbackslash citet[Table$\sim$X.X]\{citekey\}} or
             \texttt{\textbackslash citep[Figure$\sim$X.X]\{citekey\}}.
+      \item For single-character subscripts,
+            do not surround with braces (\verb+$P_{0}$+).
+            Instead, \verb+$P_0$+ is sufficient and less verbose.
     \end{itemize}
 
 \end{itemize}
