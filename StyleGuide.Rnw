@@ -438,7 +438,11 @@ for equations and overall document formatting.
       \item Equation and sections labels should never have
             any spaces.
 
-
+    \item Eliminate all non-ASCII characters from
+          \texttt{.tex} and \texttt{.Rnw} files.
+          Use \\
+          \verb+tools::showNonASCIIfile(file = "file_name")+ \\
+          to find those characters.
 
 
 \end{itemize}
