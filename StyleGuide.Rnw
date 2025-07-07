@@ -384,9 +384,20 @@ $y_i$ is the mole fraction of mixture component $i$.
 %++++++++++++++++++++++++++++++
 
 Units are not written in math mode.
-Dollar signs (\$) are unnecessary to format units.
-Use "/" not \texttt{\textbackslash frac}.
 
+\begin{itemize}
+
+  \item Dollar signs (\$) are unnecessary to format units.\\
+        Use "/" not \texttt{\textbackslash frac}.
+  \item When two or more units exist in a numerator or denominator
+        use a dot instead of a hyphen. Like this:\\
+        $\mathrm{kJ/mol \cdot K}$
+        %
+        where the dot comes from \texttt{\textbackslash cdot}.
+  \item To include subscripts use the code:
+        \$ \texttt{\textbackslash mathrm} kJ/mol \$
+
+\end{itemize}
 
 %++++++++++++++++++++++++++++++
 \subsection{Typesetting variables and matrices}
