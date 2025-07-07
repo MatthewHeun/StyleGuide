@@ -231,9 +231,22 @@ The Oxford comma usually clarifies writing.
         \emph{To graduate, earn high marks in all your courses.}
 
 \end{itemize}
-%
 
 
+
+%++++++++++++++++++++++++++++++
+\subsection{Punctuation tips}
+\label{sec:punctuation_tips}
+%++++++++++++++++++++++++++++++
+
+\begin{itemize}
+
+  \item LaTeX assumes any period is the end of a sentence and will add an extra space.\\
+    \emph{\st{The U.S. was founded in 1776.}} \\
+    Add a backslash after phrases you don't want ending a sentence.\\
+    \emph{The U.S.\ was founded in 1776.}
+
+\end{itemize}
 %++++++++++++++++++++++++++++++
 \subsection{Punctuation around quotation marks}
 \label{sec:punctuation_quotes}
@@ -365,6 +378,14 @@ $y_i$ is the mole fraction of mixture component $i$.
 
 \end{itemize}
 %
+%++++++++++++++++++++++++++++++
+\subsection{Units}
+\label{sec:units}
+%++++++++++++++++++++++++++++++
+
+Units are not written in math mode.
+Dollar signs (\$) are unnecessary to format units.
+Use "/" not \texttt{\textbackslash frac}.
 
 
 %++++++++++++++++++++++++++++++
@@ -426,6 +447,10 @@ for equations and overall document formatting.
             ``t'' is gives textual citation and includes
             the author on your behalf.
             ``p'' does not include the author.
+    \item To cite a table, figure, or page from a paper,
+          include ''\textasciitilde'' to include space between
+          the period and the number.
+          \emph{[p.~16]} versus \st{\emph{[p.16]}}
     \end{itemize}
 
       \item For single-character subscripts,
