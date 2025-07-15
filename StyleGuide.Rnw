@@ -512,11 +512,32 @@ involves configuring the snippet manager so that
 typing \texttt{llsec} generates the following.
 
 \begin{lstlisting}[language=TEX, caption=\texttt{llsec} example.]
+\end{lstlisting}
+
+%++++++++++++++++++++++++++++++
+\subsection{Installing Packages}
+\label{sec:installing_packages}
+%++++++++++++++++++++++++++++++
+
+ctan.org is a website for LaTeX packages that exist.
+Under the packages tab
+in the terminal of RStudio,
+there is an install tab
+and a list of available packages.
+At the beginning of an RStudio project,
+include \texttt{usepackage{package name}}.
+
+For chemical equations,
+package mhchem or flutter tex
+are useful.
+\href{https://ctan.math.illinois.edu/macros/latex/contrib/mhchem/mhchem.pdf}
+is a helpful pdf for using mhchem.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{}
 \label{sec:placeholder_label}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{lstlisting}
+
 
 Use the prefix ``ll'' for \LaTeX{} commands and
 the prefix ``llg'' for Greek letters.
