@@ -395,7 +395,8 @@ Units are not written in math mode.
         %
         where the dot comes from \texttt{\textbackslash cdot}.
   \item To include subscripts use the code:
-        \$ \texttt{\textbackslash mathrm} kJ/mol \$
+        \verb+$\mathrm{kJ_i/mol_i}$+ which renders as
+        $\mathrm{kJ_i/mol_i}$.
 
 \end{itemize}
 
@@ -512,32 +513,11 @@ involves configuring the snippet manager so that
 typing \texttt{llsec} generates the following.
 
 \begin{lstlisting}[language=TEX, caption=\texttt{llsec} example.]
-\end{lstlisting}
-
-%++++++++++++++++++++++++++++++
-\subsection{Installing Packages}
-\label{sec:installing_packages}
-%++++++++++++++++++++++++++++++
-
-ctan.org is a website for LaTeX packages that exist.
-Under the packages tab
-in the terminal of RStudio,
-there is an install tab
-and a list of available packages.
-At the beginning of an RStudio project,
-include \texttt{usepackage{package name}}.
-
-For chemical equations,
-package mhchem or flutter tex
-are useful.
-\href{https://ctan.math.illinois.edu/macros/latex/contrib/mhchem/mhchem.pdf}
-is a helpful pdf for using mhchem.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{}
 \label{sec:placeholder_label}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\end{lstlisting}
 
 Use the prefix ``ll'' for \LaTeX{} commands and
 the prefix ``llg'' for Greek letters.
@@ -551,6 +531,43 @@ Tools such as \href{https://www.alfredapp.com}{Alfred} and
 \href{https://textexpander.com}{Text expander}
 provide a way to indicate the desired
 cursor location after snippet expansion.
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Installing Packages}
+\label{sec:installing_packages}
+%++++++++++++++++++++++++++++++
+
+%------------------------------
+\subsubsection{\LaTeX{} packages}
+\label{sec:latex_packages}
+%------------------------------
+
+\url{https://ctan.org} is a website for LaTeX packages.
+In the preamble of the \LaTeX{} file,
+include \verb+\usepackage{package_name}+.
+
+For chemical equations,
+packages \texttt{mchem} or \verb+flutter_tex+
+are useful.
+\href{https://ctan.math.illinois.edu/macros/latex/contrib/mhchem/mhchem.pdf}
+provides the manual for mhchem.
+
+
+%------------------------------
+\subsubsection{\texttt{R} packages}
+\label{sec:r_packages}
+%------------------------------
+
+Under the packages tab
+in the terminal of RStudio,
+there is an install tab
+and a list of available \texttt{R} packages.
+
+
+
+
+
 
 \cleardoublepage
 
