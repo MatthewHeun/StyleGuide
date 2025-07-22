@@ -459,28 +459,27 @@ for equations and overall document formatting.
             ``t'' is gives textual citation and includes
             the author on your behalf.
             ``p'' does not include the author.
-    \item To cite a table, figure, or page from a paper,
-          include ''\textasciitilde'' to include space between
-          the period and the number.
-          \emph{[p.~16]} versus \st{\emph{[p.16]}}
+      \item To cite a table, figure, or page from a paper,
+            use ``\verb+~+'' to include non-breaking
+            and appropriate-length space between the period and the number:
+            [p.~16] not \st{[p.16]} or \st{[p. 16]}.
     \end{itemize}
 
-      \item For single-character subscripts,
-            do not surround with braces (\verb+$P_{0}$+).
-            Instead, \verb+$P_0$+ is sufficient and less verbose.
+    \item For single-character subscripts,
+          do not surround with braces \st{\texttt{\textdollar{}P\textunderscore\{0\}\textdollar}}.
+          Instead, \verb+$P_0$+ is sufficient and less verbose.
 
-      \item Don't label an equation
-            unless you refer to it in the text.
+    \item Don't label an equation
+          unless you refer to it in the text.
 
-      \item Equation and sections labels should never have
-            any spaces.
+    \item Equation and sections labels should never have
+          any spaces.
 
     \item Eliminate all non-ASCII characters from
           \texttt{.tex} and \texttt{.Rnw} files.
           Use \\
           \verb+tools::showNonASCIIfile(file = "file_name")+ \\
           to find those characters.
-
 
 \end{itemize}
 %
