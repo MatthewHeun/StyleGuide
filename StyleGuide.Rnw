@@ -243,7 +243,7 @@ The Oxford comma usually clarifies writing.
 
   \item LaTeX assumes any period is the end of a sentence and will add an extra space.\\
     \emph{\st{The U.S. was founded in 1776.}} \\
-    Add a backslash after phrases you don't want ending a sentence.\\
+    Add a backslash after periods that don't end a sentence.\\
     \emph{The U.S.\ was founded in 1776.}
 
 \end{itemize}
@@ -387,9 +387,13 @@ Units are not written in math mode.
 
 \begin{itemize}
 
-  \item Dollar signs (\$) are unnecessary to format units.\\
-        Use "/" not \texttt{\textbackslash frac}.
-  \item When two or more units exist in a numerator or denominator
+  \item Dollar signs (\$) are unnecessary to format units,
+        because units should not be italicized.
+        Also, use ``/'' not \texttt{\textbackslash{}frac\{\}\{\}}. \\
+        \st{\texttt{\textdollar{}kJ/kg\textdollar}} \\
+        \st{\texttt{\textdollar{}\textbackslash{}frac\{kJ\}\{kg\}\textdollar}} \\
+        Instead, simply \texttt{kJ/kg}.
+  \item When two or more units are multiplied in a numerator or denominator
         use a dot instead of a hyphen. Like this:\\
         $\mathrm{kJ/mol \cdot K}$
         %
@@ -430,7 +434,7 @@ Units are not written in math mode.
         because they draw the reader's eye.
 
   \item Use subsections with headings to provide
-        the reader guidance as they read your report.
+        the reader guidance as they read your paper or report.
 
 \end{itemize}
 
@@ -443,7 +447,7 @@ Units are not written in math mode.
 
 If you don't (or can't) use \LaTeX{}
 (which does these these things automatically),
-following these rules:
+follow these rules:
 
 \begin{itemize}
 
