@@ -416,7 +416,60 @@ Units are not written in math mode.
 \end{itemize}
 
 
+%++++++++++++++++++++++++++++++
+\subsection{Other aspects of style}
+\label{sec:other_aspects_style}
+%++++++++++++++++++++++++++++++
 
+
+%
+\begin{itemize}
+
+  \item Move most numerical results to a table or graph.
+        A table or graph is the best way to show important results,
+        because they draw the reader's eye.
+
+  \item Use subsections with headings to provide
+        the reader guidance as they read your report.
+
+\end{itemize}
+
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Other aspects of formatting}
+\label{sec:other_aspects_formatting}
+%++++++++++++++++++++++++++++++
+
+If you don't (or can't) use \LaTeX{}
+(which does these these things automatically),
+following these rules:
+
+\begin{itemize}
+
+  \item Center equations and put equation numbers at right margin.
+        See textbooks for formatting. Do not include the word ``equation.''
+
+  \item Number pages at bottom center,
+        starting with 1 on the first page of content.
+        (The cover page does not deserve a number!)
+        Don't number the empty page between cover page and first page of content.
+        See a real book for how to number pages.
+
+  \item Fully justify text (left and right sides)
+        to achieve a professional look.
+        Look at real books to see how they are typeset.
+
+  \item Center table captions above the table.
+
+  \item Center figure captions beneath the figure.
+
+  \item Don't orphan tables across pages.
+
+  \item Do not give numbers without units!
+
+\end{itemize}
+%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\LaTeX{}}
