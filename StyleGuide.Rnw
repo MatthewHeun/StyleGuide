@@ -241,10 +241,11 @@ The Oxford comma usually clarifies writing.
 
 \begin{itemize}
 
-  \item LaTeX assumes any period is the end of a sentence and will add an extra space.\\
-    \emph{\st{The U.S. was founded in 1776.}} \\
-    Add a backslash after periods that don't end a sentence.\\
-    \emph{The U.S.\ was founded in 1776.}
+  \item LaTeX assumes any period is the end of a sentence and
+        will add a little extra space.\\
+        \emph{\st{The U.S. was founded in 1776.}} \\
+        Add a backslash after periods that don't end a sentence.\\
+        \emph{The U.S.\ was founded in 1776.}
 
 \end{itemize}
 %++++++++++++++++++++++++++++++
