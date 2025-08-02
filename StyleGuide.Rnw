@@ -78,10 +78,19 @@ with Prof.\ Heun.
 
 \end{frontmatter}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 \label{sec:introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+A writer's maxim says,
+``Clear writing is evidence of clear thinking.''
+This style guide provides helpful hints and suggestions
+for developing a clear writing style
+the showcases your clear thinking
+when writing academic papers and
+journal articles with Prof.\ Heun.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,23 +126,30 @@ before mentioning any details.
 %
 \begin{itemize}
 
+  \item The Introduction should start with identifying why and how
+        the topic of the paper is important.
+
+  \item The Introduction should then narrow
+        to the research question to be answered
+        by the paper.
+
   \item The Introduction should include a short summary of prior literature.
 
   \item The Introduction should identify a few (typically 3 or less)
         contributions to the literature.
 
   \item The introduction almost always ends with a paragraph such as the following.
-          \begin{quotation}
+        \begin{quotation}
           \noindent{}The remainder of this paper is structured as follows.
           Section~2 describes methods and data.
           Section~3 describes results obtained
-          by applying the methods to the data.
+          by applying the methods of Section~2 to the data.
           Section~4 discusses the results, and
           Section~5 concludes.
           Appendices,
           supplementary information, and
           a data repository contain additional information.
-          \end{quotation}
+        \end{quotation}
 
 \end{itemize}
 %
@@ -153,17 +169,12 @@ before mentioning any details.
         of the paper. Avoid the temptation
         to write methods
         within the results section.
-        For example, the Table~\ref{tab}
-        presents results for three efficiency types.
+        For example,
+        ``Table~3 presents results for three efficiency types.''
+        belongs in the results section, not the methods section.
         The results section should discuss the numerical results
         but the methods section should discuss the three methods
         used to determine the numerical results.
-% \begin{table}
-% \centering
-% \includegraphics[width=0.8\linewidth]{images/Efficiency Table.png}
-% \caption{The efficiencies of coal processing systems in a material conversion chain}
-% \label{tab:efficiencyofcoal}
-% \end{table}
 
 \end{itemize}
 %
@@ -182,7 +193,7 @@ Using ``this,'' ``that,'' or ``it'' as the subject of a sentence
 is almost always problematic, because
 the antecedent is almost always \emph{un}clear to the reader.
 (Interestingly, the antecedent is almost always clear to the writer,
-making it difficult to spot this problem.)
+making this problem difficult to spot.)
 %
 \begin{itemize}
 
@@ -272,8 +283,9 @@ The Oxford comma usually clarifies writing.
 %++++++++++++++++++++++++++++++
 
 ``Primary,'' ``final,'' and ``useful''
-are adjectives that describe stages in the energy conversion chain.
-
+are adjectives that describe stages in the energy conversion chain
+and
+should be treated as reserved words.
 %
 \begin{itemize}
 
@@ -300,15 +312,34 @@ more easily.
 
 \begin{itemize}
 
-  \item Referring to figures, tables, etc. should avoid words
+  \item When referring to figures, tables, etc.\ avoid words
         such as seen, display, etc.\\
         \emph{\st{In this section we display results}}\\
-        \emph{In this section we present results}
+        \emph{In this section we present results} \\
+        \emph{\st{It can be seen in Figure~3, \ldots}}\\
+        \emph{Figure~3 shows \ldots}
+
   \item Take care in the placement of adverbs. \\
         \emph{\st{Figure X only shows three concepts.}} \\
         \emph{Figure X shows only three concepts.}
+
 \end{itemize}
 
+
+%++++++++++++++++++++++++++++++
+\subsection{Typesetting variables and matrices}
+\label{sec:typesetting_vars_mats}
+%++++++++++++++++++++++++++++++
+
+\begin{itemize}
+
+  \item Variables are typeset as italics ($r$).
+
+  \item Vectors are typeset as bold lowercase letters (\textbf{r}).
+
+  \item Matrices are typeset as bold uppercase letters (\textbf{R}).
+
+\end{itemize}
 
 
 %++++++++++++++++++++++++++++++
@@ -316,7 +347,8 @@ more easily.
 \label{sec:punctuation_equations}
 %++++++++++++++++++++++++++++++
 
-Punctuate equations as though the equal sign were a verb.
+Punctuate equations as though they are part of the sentence
+and the equal sign is a verb.
 %
 \begin{itemize}
 
@@ -378,45 +410,47 @@ $N_i$ is the number of moles of mixture component $i$, and
 $y_i$ is the mole fraction of mixture component $i$.
 
 \end{itemize}
-%
+
+
 %++++++++++++++++++++++++++++++
 \subsection{Units}
 \label{sec:units}
 %++++++++++++++++++++++++++++++
 
-Units are not written in math mode.
-
 \begin{itemize}
 
-  \item Dollar signs (\$) are unnecessary to format units,
+  \item All numbers that deserve units should have units!
+
+  \item Units should not be surrounded by \verb+()+,
+        \verb+[]+, or \verb+{}+. \\
+        \st{42~[m]} \\
+        42~m
+
+  \item Units should not be italicized so should not be typeset
+        in \LaTeX's math mode.
+
+  \item In \LaTeX, dollar signs (\$) are unnecessary to format units,
         because units should not be italicized.
         Also, use ``/'' not \texttt{\textbackslash{}frac\{\}\{\}}. \\
         \st{\texttt{\textdollar{}kJ/kg\textdollar}} \\
         \st{\texttt{\textdollar{}\textbackslash{}frac\{kJ\}\{kg\}\textdollar}} \\
         Instead, simply \texttt{kJ/kg}.
+
   \item When two or more units are multiplied in a numerator or denominator
-        use a dot instead of a hyphen. Like this:\\
-        $\mathrm{kJ/mol \cdot K}$
+        use the interpunct instead of a hyphen or multiplication sign.
+        Like this:\\
+        $\mathrm{kJ/mol \! \cdot \! K}$
         %
-        where the dot comes from \texttt{\textbackslash cdot}.
-  \item To include subscripts use the code:
+        where the interpunct comes from \texttt{\textbackslash cdot}.
+
+  \item You may need to use \verb+\!+ to close up
+        leading and trailing space around
+        the \texttt{\textbackslash cdot},
+        as in the example above.
+
+  \item To include subscripts on units, use the code:
         \verb+$\mathrm{kJ_i/mol_i}$+ which renders as
         $\mathrm{kJ_i/mol_i}$.
-
-\end{itemize}
-
-%++++++++++++++++++++++++++++++
-\subsection{Typesetting variables and matrices}
-\label{sec:typesetting_vars_mats}
-%++++++++++++++++++++++++++++++
-
-\begin{itemize}
-
-  \item Variables are typeset as italics ($r$).
-
-  \item Vectors are typeset as bold lowercase letters (\textbf{r}).
-
-  \item Matrices are typeset as bold uppercase letters (\textbf{R}).
 
 \end{itemize}
 
@@ -426,8 +460,6 @@ Units are not written in math mode.
 \label{sec:other_aspects_style}
 %++++++++++++++++++++++++++++++
 
-
-%
 \begin{itemize}
 
   \item Move most numerical results to a table or graph.
@@ -435,10 +467,9 @@ Units are not written in math mode.
         because they draw the reader's eye.
 
   \item Use subsections with headings to provide
-        the reader guidance as they read your paper or report.
+        guidance to the reader.
 
 \end{itemize}
-
 
 
 %++++++++++++++++++++++++++++++
@@ -447,15 +478,17 @@ Units are not written in math mode.
 %++++++++++++++++++++++++++++++
 
 If you don't (or can't) use \LaTeX{}
-(which does these these things automatically),
+(which does these things automatically),
 follow these rules:
 
 \begin{itemize}
 
   \item Center equations and put equation numbers at right margin.
-        See textbooks for formatting. Do not include the word ``equation.''
+        See textbooks for formatting.
+        Do not include the word ``equation''
+        with the label.
 
-  \item Number pages at bottom center,
+  \item Center page numbers at the bottom,
         starting with 1 on the first page of content.
         (The cover page does not deserve a number!)
         Don't number the empty page between cover page and first page of content.
@@ -470,8 +503,6 @@ follow these rules:
   \item Center figure captions beneath the figure.
 
   \item Don't orphan tables across pages.
-
-  \item Do not give numbers without units!
 
 \end{itemize}
 %
