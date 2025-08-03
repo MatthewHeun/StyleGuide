@@ -463,7 +463,8 @@ $y_i$ is the mole fraction of mixture component $i$.
 \begin{itemize}
 
   \item Move most numerical results to a table or graph.
-        A table or graph is the best way to show important results,
+        Tables and graphs are the best way
+        to highlight important results,
         because they draw the reader's eye.
 
   \item Use subsections with headings to provide
@@ -505,21 +506,34 @@ follow these rules:
   \item Don't orphan tables across pages.
 
 \end{itemize}
-%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{\LaTeX{}}
+\section{The \LaTeX{} technology stack}
 \label{sec:use_latex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Writing in \LaTeX{} makes your life easier.
 \LaTeX{} is much better than word
 for equations and overall document formatting.
+You can also use \texttt{R} and RStudio
+with \texttt{knitr} or \texttt{Sweave} to embed
+\texttt{R} code within \LaTeX documents.
 
-%
 \begin{itemize}
 
-  \item Use short lines.
+  \item Install \LaTeX from \url{https://tug.org/texlive/}.
+        (Don't install \LaTeX from MikTeX.)
+
+  \item Install R from \url{https://www.r-project.org}.
+
+  \item Use RStudio or Positron as your IDE.
+        RStudio is older and more mature.
+        Positron is the future IDE for \texttt{R} and Python data science.
+        Install RStudio from \url{https://posit.co/downloads/}.
+        Install Positron from \url{https://positron.posit.co/download.html}.
+
+  \item In \LaTeX source code, use short lines.
 
   \item Start each sentence on a new line.
 
@@ -527,31 +541,41 @@ for equations and overall document formatting.
 
   \item Use \texttt{BibLaTeX} for bibliography management and citations.
     \begin{itemize}
-      \item Cite using BibDesk
-            and compile the document to a BibLaTeX file.
+      \item On the Mac, use the BibDesk app to edit and organize references.
+
+      \item The native file format for BibDesk is a .bib file
+            compatible with BibLaTeX.
             Standard naming
             for this file is \texttt{references.bib}.
-      \item Citations with two authors use the format \\
+
+      \item For citations with two authors, use the format \\
             \texttt{author = \{A. \{Valero Capilla\}
-                    and A. \{Valero Delgado\}\}}.
+                    and A. \{Valero Delgado\}\}} \\
+            in the \texttt{.bib} file.
+
       \item Use \texttt{\{\}} around compound names,
             as in the example above.
-      \item The \texttt{BibLaTeX} file will not compile
+
+      \item The \texttt{.bib} file will not compile
             if the citekey contains \texttt{\&} or \texttt{;} .
+
       \item Use the following commands to cite in the paper: \\
-            \texttt{\textbackslash citep\{Author\_Year\}} or
-            \texttt{\textbackslash citet\{Author\_Year\}}.
+            \texttt{\textbackslash citep\{citekey\}} or
+            \texttt{\textbackslash citet\{citekey\}}.
+            ``t'' is gives textual citation and includes
+            the author before the year.
+            ``p'' puts both author and year in parentheses.
+
       \item To cite a table or figure from a paper,
             use the command \\
             \texttt{\textbackslash citet[Table$\sim$X.X]\{citekey\}} or
             \texttt{\textbackslash citep[Figure$\sim$X.X]\{citekey\}}.
-            ``t'' is gives textual citation and includes
-            the author on your behalf.
-            ``p'' does not include the author.
+
       \item To cite a table, figure, or page from a paper,
             use ``\verb+~+'' to include non-breaking
             and appropriate-length space between the period and the number:
             [p.~16] not \st{[p.16]} or \st{[p. 16]}.
+
     \end{itemize}
 
     \item For single-character subscripts,
@@ -561,26 +585,26 @@ for equations and overall document formatting.
     \item Don't label an equation
           unless you refer to it in the text.
 
-    \item Equation and sections labels should never have
+    \item Equation and section labels should never have
           any spaces.
+
+    \item Label all equations with the prefix \texttt{eq:}.\\
+          Label all figures with the prefix \texttt{fig:}.\\
+          Label all tables with the prefix \texttt{tab:}.\\
 
     \item Eliminate all non-ASCII characters from
           \texttt{.tex} and \texttt{.Rnw} files.
-          Use \\
+          Use the \texttt{R} command \\
           \verb+tools::showNonASCIIfile(file = "file_name")+ \\
-          to find those characters.
+          to find non-ASCII characters.
 
 \end{itemize}
-%
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Helpful hints}
 \label{sec:helpful_hints}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 %++++++++++++++++++++++++++++++
 \subsection{Type expansion}
@@ -589,7 +613,7 @@ for equations and overall document formatting.
 
 Use a snippet manager or type expansion app to help with complicated
 \LaTeX{} expressions.
-For example, the snippet manager can be configures so that
+For example, the snippet manager can be configured so that
 typing \texttt{llga} produces the following.
 
 \begin{lstlisting}[language=TEX, caption=\texttt{llga} example.]
@@ -612,12 +636,13 @@ the prefix ``llg'' for Greek letters.
 
 RStudio includes a snippet manager found in "Edit Code Snippets".
 Pick which file type you want to incorporate the type expansion in.
-For more information, visit \href{https://support.posit.co/hc/en-us/articles/204463668-Code-Snippets-in-the-RStudio-IDE}{RStudio snippets}.
+For more information, visit
+\href{https://support.posit.co/hc/en-us/articles/204463668-Code-Snippets-in-the-RStudio-IDE}{RStudio snippets}.
 
 macOS includes type expansion in the Keyboard area of settings.
 Tools such as \href{https://www.alfredapp.com}{Alfred} and
 \href{https://textexpander.com}{Text expander}
-provide a way to indicate the desired
+provide a way to specify the desired
 cursor location after snippet expansion.
 
 
@@ -651,10 +676,6 @@ Under the packages tab
 in the terminal of RStudio,
 there is an install tab
 and a list of available \texttt{R} packages.
-
-
-
-
 
 
 \cleardoublepage
