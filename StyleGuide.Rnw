@@ -94,7 +94,7 @@ journal articles with Prof.\ Heun.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Structure}
+\section{Paper structure}
 \label{sec:structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -152,7 +152,16 @@ before mentioning any details.
         \end{quotation}
 
 \end{itemize}
-%
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Methods and data}
+\label{sec:methods_and_data}
+%++++++++++++++++++++++++++++++
+
+****
+Placeholder for now.
+****
 
 
 %++++++++++++++++++++++++++++++
@@ -160,7 +169,6 @@ before mentioning any details.
 \label{ssc:Results}
 %++++++++++++++++++++++++++++++
 
-%
 \begin{itemize}
 
   \item The Results section should have at least one result
@@ -177,7 +185,26 @@ before mentioning any details.
         used to determine the numerical results.
 
 \end{itemize}
-%
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Discussion}
+\label{sec:discussion}
+%++++++++++++++++++++++++++++++
+
+****
+Placeholder for now.
+****
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Conclusion}
+\label{sec:conclusion}
+%++++++++++++++++++++++++++++++
+
+****
+Placeholder for now.
+****
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -437,9 +464,9 @@ $y_i$ is the mole fraction of mixture component $i$.
         Instead, simply \texttt{kJ/kg}.
 
   \item When two or more units are multiplied in a numerator or denominator
-        use the interpunct instead of a hyphen or multiplication sign.
+        use the interpunct instead of a hyphen or multiplication sign ($\times$).
         Like this:\\
-        $\mathrm{kJ/mol \! \cdot \! K}$
+        $\mathrm{kJ/mol \! \cdot \! K}$,
         %
         where the interpunct comes from \texttt{\textbackslash cdot}.
 
@@ -448,8 +475,8 @@ $y_i$ is the mole fraction of mixture component $i$.
         the \texttt{\textbackslash cdot},
         as in the example above.
 
-  \item To include subscripts on units, use the code:
-        \verb+$\mathrm{kJ_i/mol_i}$+ which renders as
+  \item To include subscripts on units, use code like this:
+        \verb+$\mathrm{kJ_i/mol_i}$+, which renders as
         $\mathrm{kJ_i/mol_i}$.
 
 \end{itemize}
@@ -509,12 +536,12 @@ follow these rules:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{The \LaTeX{} technology stack}
+\section{The \texttt{R} and \LaTeX{} technology stack}
 \label{sec:use_latex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Writing in \LaTeX{} makes your life easier.
-\LaTeX{} is much better than word
+\LaTeX{} is much better than MS Word
 for equations and overall document formatting.
 You can also use \texttt{R} and RStudio
 with \texttt{knitr} or \texttt{Sweave} to embed
@@ -523,7 +550,8 @@ with \texttt{knitr} or \texttt{Sweave} to embed
 \begin{itemize}
 
   \item Install \LaTeX from \url{https://tug.org/texlive/}.
-        (Don't install \LaTeX from MikTeX.)
+        (Don't install \LaTeX from MikTeX.
+        It never goes well.)
 
   \item Install R from \url{https://www.r-project.org}.
 
@@ -533,11 +561,47 @@ with \texttt{knitr} or \texttt{Sweave} to embed
         Install RStudio from \url{https://posit.co/downloads/}.
         Install Positron from \url{https://positron.posit.co/download.html}.
 
+  \item \LaTeX{} packages
+
+    \begin{itemize}
+
+      \item \url{https://ctan.org} is a website for LaTeX packages.
+
+      \item In the preamble of the \LaTeX{} file,
+            include \verb+\usepackage{package_name}+.
+
+      \item For chemical equations,
+            \LaTeX packages \texttt{mchem} or \verb+flutter_tex+
+            are useful.
+
+      \item \url{https://ctan.math.illinois.edu/macros/latex/contrib/mhchem/mhchem.pdf}
+            provides the manual for mhchem.
+
+    \end{itemize}
+
+  \item \texttt{R} packages
+
+    \begin{itemize}
+
+      \item Under the packages tab
+            in the terminal of RStudio,
+            there is an install tab
+            and a list of available \texttt{R} packages.
+
+      \item In Positron, it is not yet clear (to MKH) how to
+            add or update \texttt{R} packages.
+
+    \end{itemize}
+
   \item In \LaTeX source code, use short lines.
 
-  \item Start each sentence on a new line.
+    \begin{itemize}
 
-  \item Break lines after punctuation and conjunctions.
+      \item Start every sentence on a new line.
+
+      \item Break lines after punctuation and conjunctions.
+
+    \end{itemize}
 
   \item Use \texttt{BibLaTeX} for bibliography management and citations.
     \begin{itemize}
@@ -644,38 +708,6 @@ Tools such as \href{https://www.alfredapp.com}{Alfred} and
 \href{https://textexpander.com}{Text expander}
 provide a way to specify the desired
 cursor location after snippet expansion.
-
-
-%++++++++++++++++++++++++++++++
-\subsection{Installing Packages}
-\label{sec:installing_packages}
-%++++++++++++++++++++++++++++++
-
-%------------------------------
-\subsubsection{\LaTeX{} packages}
-\label{sec:latex_packages}
-%------------------------------
-
-\url{https://ctan.org} is a website for LaTeX packages.
-In the preamble of the \LaTeX{} file,
-include \verb+\usepackage{package_name}+.
-
-For chemical equations,
-packages \texttt{mchem} or \verb+flutter_tex+
-are useful.
-\href{https://ctan.math.illinois.edu/macros/latex/contrib/mhchem/mhchem.pdf}
-provides the manual for mhchem.
-
-
-%------------------------------
-\subsubsection{\texttt{R} packages}
-\label{sec:r_packages}
-%------------------------------
-
-Under the packages tab
-in the terminal of RStudio,
-there is an install tab
-and a list of available \texttt{R} packages.
 
 
 \cleardoublepage
