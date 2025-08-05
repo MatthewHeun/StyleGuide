@@ -200,6 +200,27 @@ He apologizes in advance for any roastings that occur.
 
 
 %++++++++++++++++++++++++++++++
+\subsection{Prepositions should \emph{not} be the last word}
+\label{sec:prepositions}
+%++++++++++++++++++++++++++++++
+
+Prepositions should \emph{not} be the last word in a sentence or caption.
+%
+\begin{itemize}
+
+  \item Below is a caption for a figure: \\
+        \st{An example process to apply efficiency methods to.}
+
+  \item If ``to'' is the last word, the ``to which'' construction can be employed. \\
+        An example process to which efficiency methods are applied.
+
+\end{itemize}
+%
+This is another pet peeve of MKH.
+Again, he apologizes in advance for any roastings that occur.
+
+
+%++++++++++++++++++++++++++++++
 \subsection{Oxford comma}
 \label{sec:oxford_comma}
 %++++++++++++++++++++++++++++++
