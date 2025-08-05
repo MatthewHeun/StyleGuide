@@ -78,14 +78,23 @@ with Prof.\ Heun.
 
 \end{frontmatter}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 \label{sec:introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+A writer's maxim says,
+``Clear writing is evidence of clear thinking.''
+This style guide provides helpful hints and suggestions
+for developing a clear writing style
+the showcases your clear thinking
+when writing academic papers and
+journal articles with Prof.\ Heun.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Structure}
+\section{Paper structure}
 \label{sec:structure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -117,26 +126,42 @@ before mentioning any details.
 %
 \begin{itemize}
 
+  \item The Introduction should start with identifying why and how
+        the topic of the paper is important.
+
+  \item The Introduction should then narrow
+        to the research question to be answered
+        by the paper.
+
   \item The Introduction should include a short summary of prior literature.
 
   \item The Introduction should identify a few (typically 3 or less)
         contributions to the literature.
 
   \item The introduction almost always ends with a paragraph such as the following.
-          \begin{quotation}
+        \begin{quotation}
           \noindent{}The remainder of this paper is structured as follows.
           Section~2 describes methods and data.
           Section~3 describes results obtained
-          by applying the methods to the data.
+          by applying the methods of Section~2 to the data.
           Section~4 discusses the results, and
           Section~5 concludes.
           Appendices,
           supplementary information, and
           a data repository contain additional information.
-          \end{quotation}
+        \end{quotation}
 
 \end{itemize}
-%
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Methods and data}
+\label{sec:methods_and_data}
+%++++++++++++++++++++++++++++++
+
+****
+Placeholder for now.
+****
 
 
 %++++++++++++++++++++++++++++++
@@ -144,7 +169,6 @@ before mentioning any details.
 \label{ssc:Results}
 %++++++++++++++++++++++++++++++
 
-%
 \begin{itemize}
 
   \item The Results section should have at least one result
@@ -153,20 +177,34 @@ before mentioning any details.
         of the paper. Avoid the temptation
         to write methods
         within the results section.
-        For example, the Table~\ref{tab}
-        presents results for three efficiency types.
+        For example,
+        ``Table~3 presents results for three efficiency types.''
+        belongs in the results section, not the methods section.
         The results section should discuss the numerical results
         but the methods section should discuss the three methods
         used to determine the numerical results.
-% \begin{table}
-% \centering
-% \includegraphics[width=0.8\linewidth]{images/Efficiency Table.png}
-% \caption{The efficiencies of coal processing systems in a material conversion chain}
-% \label{tab:efficiencyofcoal}
-% \end{table}
 
 \end{itemize}
-%
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Discussion}
+\label{sec:discussion}
+%++++++++++++++++++++++++++++++
+
+****
+Placeholder for now.
+****
+
+
+%++++++++++++++++++++++++++++++
+\subsection{Conclusion}
+\label{sec:conclusion}
+%++++++++++++++++++++++++++++++
+
+****
+Placeholder for now.
+****
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -182,7 +220,7 @@ Using ``this,'' ``that,'' or ``it'' as the subject of a sentence
 is almost always problematic, because
 the antecedent is almost always \emph{un}clear to the reader.
 (Interestingly, the antecedent is almost always clear to the writer,
-making it difficult to spot this problem.)
+making this problem difficult to spot.)
 %
 \begin{itemize}
 
@@ -293,8 +331,9 @@ The Oxford comma usually clarifies writing.
 %++++++++++++++++++++++++++++++
 
 ``Primary,'' ``final,'' and ``useful''
-are adjectives that describe stages in the energy conversion chain.
-
+are adjectives that describe stages in the energy conversion chain
+and
+should be treated as reserved words.
 %
 \begin{itemize}
 
@@ -321,15 +360,34 @@ more easily.
 
 \begin{itemize}
 
-  \item Referring to figures, tables, etc. should avoid words
+  \item When referring to figures, tables, etc.\ avoid words
         such as seen, display, etc.\\
         \emph{\st{In this section we display results}}\\
-        \emph{In this section we present results}
+        \emph{In this section we present results} \\
+        \emph{\st{It can be seen in Figure~3, \ldots}}\\
+        \emph{Figure~3 shows \ldots}
+
   \item Take care in the placement of adverbs. \\
         \emph{\st{Figure X only shows three concepts.}} \\
         \emph{Figure X shows only three concepts.}
+
 \end{itemize}
 
+
+%++++++++++++++++++++++++++++++
+\subsection{Typesetting variables and matrices}
+\label{sec:typesetting_vars_mats}
+%++++++++++++++++++++++++++++++
+
+\begin{itemize}
+
+  \item Variables are typeset as italics ($r$).
+
+  \item Vectors are typeset as bold lowercase letters (\textbf{r}).
+
+  \item Matrices are typeset as bold uppercase letters (\textbf{R}).
+
+\end{itemize}
 
 
 %++++++++++++++++++++++++++++++
@@ -337,7 +395,8 @@ more easily.
 \label{sec:punctuation_equations}
 %++++++++++++++++++++++++++++++
 
-Punctuate equations as though the equal sign were a verb.
+Punctuate equations as though they are part of the sentence
+and the equal sign is a verb.
 %
 \begin{itemize}
 
@@ -399,45 +458,47 @@ $N_i$ is the number of moles of mixture component $i$, and
 $y_i$ is the mole fraction of mixture component $i$.
 
 \end{itemize}
-%
+
+
 %++++++++++++++++++++++++++++++
 \subsection{Units}
 \label{sec:units}
 %++++++++++++++++++++++++++++++
 
-Units are not written in math mode.
-
 \begin{itemize}
 
-  \item Dollar signs (\$) are unnecessary to format units,
+  \item All numbers that deserve units should have units!
+
+  \item Units should not be surrounded by \verb+()+,
+        \verb+[]+, or \verb+{}+. \\
+        \st{42~[m]} \\
+        42~m
+
+  \item Units should not be italicized so should not be typeset
+        in \LaTeX's math mode.
+
+  \item In \LaTeX, dollar signs (\$) are unnecessary to format units,
         because units should not be italicized.
         Also, use ``/'' not \texttt{\textbackslash{}frac\{\}\{\}}. \\
         \st{\texttt{\textdollar{}kJ/kg\textdollar}} \\
         \st{\texttt{\textdollar{}\textbackslash{}frac\{kJ\}\{kg\}\textdollar}} \\
         Instead, simply \texttt{kJ/kg}.
+
   \item When two or more units are multiplied in a numerator or denominator
-        use a dot instead of a hyphen. Like this:\\
-        $\mathrm{kJ/mol \cdot K}$
+        use the interpunct instead of a hyphen or multiplication sign ($\times$).
+        Like this:\\
+        $\mathrm{kJ/mol \! \cdot \! K}$,
         %
-        where the dot comes from \texttt{\textbackslash cdot}.
-  \item To include subscripts use the code:
-        \verb+$\mathrm{kJ_i/mol_i}$+ which renders as
+        where the interpunct comes from \texttt{\textbackslash cdot}.
+
+  \item You may need to use \verb+\!+ to close up
+        leading and trailing space around
+        the \texttt{\textbackslash cdot},
+        as in the example above.
+
+  \item To include subscripts on units, use code like this:
+        \verb+$\mathrm{kJ_i/mol_i}$+, which renders as
         $\mathrm{kJ_i/mol_i}$.
-
-\end{itemize}
-
-%++++++++++++++++++++++++++++++
-\subsection{Typesetting variables and matrices}
-\label{sec:typesetting_vars_mats}
-%++++++++++++++++++++++++++++++
-
-\begin{itemize}
-
-  \item Variables are typeset as italics ($r$).
-
-  \item Vectors are typeset as bold lowercase letters (\textbf{r}).
-
-  \item Matrices are typeset as bold uppercase letters (\textbf{R}).
 
 \end{itemize}
 
@@ -447,19 +508,17 @@ Units are not written in math mode.
 \label{sec:other_aspects_style}
 %++++++++++++++++++++++++++++++
 
-
-%
 \begin{itemize}
 
   \item Move most numerical results to a table or graph.
-        A table or graph is the best way to show important results,
+        Tables and graphs are the best way
+        to highlight important results,
         because they draw the reader's eye.
 
   \item Use subsections with headings to provide
-        the reader guidance as they read your paper or report.
+        guidance to the reader.
 
 \end{itemize}
-
 
 
 %++++++++++++++++++++++++++++++
@@ -468,15 +527,17 @@ Units are not written in math mode.
 %++++++++++++++++++++++++++++++
 
 If you don't (or can't) use \LaTeX{}
-(which does these these things automatically),
+(which does these things automatically),
 follow these rules:
 
 \begin{itemize}
 
   \item Center equations and put equation numbers at right margin.
-        See textbooks for formatting. Do not include the word ``equation.''
+        See textbooks for formatting.
+        Do not include the word ``equation''
+        with the label.
 
-  \item Number pages at bottom center,
+  \item Center page numbers at the bottom,
         starting with 1 on the first page of content.
         (The cover page does not deserve a number!)
         Don't number the empty page between cover page and first page of content.
@@ -492,56 +553,114 @@ follow these rules:
 
   \item Don't orphan tables across pages.
 
-  \item Do not give numbers without units!
-
 \end{itemize}
-%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{\LaTeX{}}
+\section{The \texttt{R} and \LaTeX{} technology stack}
 \label{sec:use_latex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Writing in \LaTeX{} makes your life easier.
-\LaTeX{} is much better than word
+\LaTeX{} is much better than MS Word
 for equations and overall document formatting.
+You can also use \texttt{R} and RStudio
+with \texttt{knitr} or \texttt{Sweave} to embed
+\texttt{R} code within \LaTeX documents.
 
-%
 \begin{itemize}
 
-  \item Use short lines.
+  \item Install \LaTeX from \url{https://tug.org/texlive/}.
+        (Don't install \LaTeX from MikTeX.
+        It never goes well.)
 
-  \item Start each sentence on a new line.
+  \item Install R from \url{https://www.r-project.org}.
 
-  \item Break lines after punctuation and conjunctions.
+  \item Use RStudio or Positron as your IDE.
+        RStudio is older and more mature.
+        Positron is the future IDE for \texttt{R} and Python data science.
+        Install RStudio from \url{https://posit.co/downloads/}.
+        Install Positron from \url{https://positron.posit.co/download.html}.
+
+  \item \LaTeX{} packages
+
+    \begin{itemize}
+
+      \item \url{https://ctan.org} is a website for LaTeX packages.
+
+      \item In the preamble of the \LaTeX{} file,
+            include \verb+\usepackage{package_name}+.
+
+      \item For chemical equations,
+            \LaTeX packages \texttt{mchem} or \verb+flutter_tex+
+            are useful.
+
+      \item \url{https://ctan.math.illinois.edu/macros/latex/contrib/mhchem/mhchem.pdf}
+            provides the manual for mhchem.
+
+    \end{itemize}
+
+  \item \texttt{R} packages
+
+    \begin{itemize}
+
+      \item Under the packages tab
+            in the terminal of RStudio,
+            there is an install tab
+            and a list of available \texttt{R} packages.
+
+      \item In Positron, it is not yet clear (to MKH) how to
+            add or update \texttt{R} packages.
+
+    \end{itemize}
+
+  \item In \LaTeX source code, use short lines.
+
+    \begin{itemize}
+
+      \item Start every sentence on a new line.
+
+      \item Break lines after punctuation and conjunctions.
+
+    \end{itemize}
 
   \item Use \texttt{BibLaTeX} for bibliography management and citations.
     \begin{itemize}
-      \item Cite using BibDesk
-            and compile the document to a BibLaTeX file.
+      \item On the Mac, use the BibDesk app to edit and organize references.
+
+      \item The native file format for BibDesk is a .bib file
+            compatible with BibLaTeX.
             Standard naming
             for this file is \texttt{references.bib}.
-      \item Citations with two authors use the format \\
+
+      \item For citations with two authors, use the format \\
             \texttt{author = \{A. \{Valero Capilla\}
-                    and A. \{Valero Delgado\}\}}.
+                    and A. \{Valero Delgado\}\}} \\
+            in the \texttt{.bib} file.
+
       \item Use \texttt{\{\}} around compound names,
             as in the example above.
-      \item The \texttt{BibLaTeX} file will not compile
+
+      \item The \texttt{.bib} file will not compile
             if the citekey contains \texttt{\&} or \texttt{;} .
+
       \item Use the following commands to cite in the paper: \\
-            \texttt{\textbackslash citep\{Author\_Year\}} or
-            \texttt{\textbackslash citet\{Author\_Year\}}.
+            \texttt{\textbackslash citep\{citekey\}} or
+            \texttt{\textbackslash citet\{citekey\}}.
+            ``t'' is gives textual citation and includes
+            the author before the year.
+            ``p'' puts both author and year in parentheses.
+
       \item To cite a table or figure from a paper,
             use the command \\
             \texttt{\textbackslash citet[Table$\sim$X.X]\{citekey\}} or
             \texttt{\textbackslash citep[Figure$\sim$X.X]\{citekey\}}.
-            ``t'' is gives textual citation and includes
-            the author on your behalf.
-            ``p'' does not include the author.
+
       \item To cite a table, figure, or page from a paper,
             use ``\verb+~+'' to include non-breaking
             and appropriate-length space between the period and the number:
             [p.~16] not \st{[p.16]} or \st{[p. 16]}.
+
     \end{itemize}
 
     \item For single-character subscripts,
@@ -551,26 +670,26 @@ for equations and overall document formatting.
     \item Don't label an equation
           unless you refer to it in the text.
 
-    \item Equation and sections labels should never have
+    \item Equation and section labels should never have
           any spaces.
+
+    \item Label all equations with the prefix \texttt{eq:}.\\
+          Label all figures with the prefix \texttt{fig:}.\\
+          Label all tables with the prefix \texttt{tab:}.\\
 
     \item Eliminate all non-ASCII characters from
           \texttt{.tex} and \texttt{.Rnw} files.
-          Use \\
+          Use the \texttt{R} command \\
           \verb+tools::showNonASCIIfile(file = "file_name")+ \\
-          to find those characters.
+          to find non-ASCII characters.
 
 \end{itemize}
-%
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Helpful hints}
 \label{sec:helpful_hints}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 %++++++++++++++++++++++++++++++
 \subsection{Type expansion}
@@ -579,7 +698,7 @@ for equations and overall document formatting.
 
 Use a snippet manager or type expansion app to help with complicated
 \LaTeX{} expressions.
-For example, the snippet manager can be configures so that
+For example, the snippet manager can be configured so that
 typing \texttt{llga} produces the following.
 
 \begin{lstlisting}[language=TEX, caption=\texttt{llga} example.]
@@ -602,49 +721,14 @@ the prefix ``llg'' for Greek letters.
 
 RStudio includes a snippet manager found in "Edit Code Snippets".
 Pick which file type you want to incorporate the type expansion in.
-For more information, visit \href{https://support.posit.co/hc/en-us/articles/204463668-Code-Snippets-in-the-RStudio-IDE}{RStudio snippets}.
+For more information, visit
+\href{https://support.posit.co/hc/en-us/articles/204463668-Code-Snippets-in-the-RStudio-IDE}{RStudio snippets}.
 
 macOS includes type expansion in the Keyboard area of settings.
 Tools such as \href{https://www.alfredapp.com}{Alfred} and
 \href{https://textexpander.com}{Text expander}
-provide a way to indicate the desired
+provide a way to specify the desired
 cursor location after snippet expansion.
-
-
-%++++++++++++++++++++++++++++++
-\subsection{Installing Packages}
-\label{sec:installing_packages}
-%++++++++++++++++++++++++++++++
-
-%------------------------------
-\subsubsection{\LaTeX{} packages}
-\label{sec:latex_packages}
-%------------------------------
-
-\url{https://ctan.org} is a website for LaTeX packages.
-In the preamble of the \LaTeX{} file,
-include \verb+\usepackage{package_name}+.
-
-For chemical equations,
-packages \texttt{mchem} or \verb+flutter_tex+
-are useful.
-\href{https://ctan.math.illinois.edu/macros/latex/contrib/mhchem/mhchem.pdf}
-provides the manual for mhchem.
-
-
-%------------------------------
-\subsubsection{\texttt{R} packages}
-\label{sec:r_packages}
-%------------------------------
-
-Under the packages tab
-in the terminal of RStudio,
-there is an install tab
-and a list of available \texttt{R} packages.
-
-
-
-
 
 
 \cleardoublepage
