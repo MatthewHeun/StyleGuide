@@ -85,7 +85,22 @@ with Prof.\ Heun.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 A writer's maxim says,
-``Clear writing is evidence of clear thinking.''
+``clear writing is evidence of clear thinking.''
+Clear thinking emerges when you convert
+the jumbled mess of thoughts in your head
+into a comprehensible and linear progression of ideas
+for a reader or audience.
+It's like spinning a yarn (your narrative)
+from a jumbled pile of wool (your thoughts).
+(Notably, one of the meanings
+of the word ``yarn'' is ``story!'')
+
+Seen in this way,
+writing becomes a discipline or praxis
+to develop clear thinking and effective communication.
+That's why effective communicators use the writing process
+to clarify their thinking.
+
 This style guide provides helpful hints and suggestions
 for developing a clear writing style
 that showcases your clear thinking
