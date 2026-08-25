@@ -270,7 +270,7 @@ Prepositions should \emph{not} be the last word in a sentence or caption.
 
 \end{itemize}
 %
-This is another pet peeve of MKH.
+A last word preposition is another pet peeve of MKH.
 Again, he apologizes in advance for any roastings that occur.
 
 
